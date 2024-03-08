@@ -1,0 +1,22 @@
+<div class="container m-5">
+  <div id="<%= dom_id student %>">
+    <p>
+      <strong>Name:</strong>
+      <%= student.name %>
+    </p>
+  
+  
+    <p>
+      <%= student.funny_nickname %>
+    </p>
+
+    <%= cl_image_tag student.photo.key, alt: "Student photo that is not creepy" if student.photo.attached? %>
+  
+    <p>
+      <strong>Bio:</strong>
+      <%= student.bio %>
+    </p>
+  
+  </div>
+</div>
+
